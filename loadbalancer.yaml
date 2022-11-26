@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: loadbalancer
+  namespace: lab3
+  labels:
+    name: lb-service
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  type: LoadBalancer
+  selector:
+    app: employees
