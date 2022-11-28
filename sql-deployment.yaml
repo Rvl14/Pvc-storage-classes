@@ -23,7 +23,7 @@ spec:
           - name: deploy-cont
             image: 406947468681.dkr.ecr.us-east-1.amazonaws.com/mysql:v1.0 
             volumeMounts:
-              - mountPath: /logs
+              - mountPath: /var/lib/mysql
                 name: mysql-pvc
             ports:
               - containerPort: 3306
