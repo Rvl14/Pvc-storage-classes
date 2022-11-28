@@ -9,4 +9,5 @@ spec:
     - ReadWriteOnce
   storageClassName: localstorage
   hostpath:
+    name: hostpath-pvc
     path: /logs/files
