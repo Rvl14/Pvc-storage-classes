@@ -7,7 +7,7 @@ spec:
   capacity:
     storage: 4Gi
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteOnce
   storageClassName: localstorage
   hostpath:
     path: /tmp/mysql
